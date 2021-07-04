@@ -1,0 +1,23 @@
+{
+  "name": "webpack-basic",
+  "version": "1.0.0",
+  "description": "* [생활코딩](https://opentutorials.org/module/4566)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bom2zzang/webpack-basic.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bom2zzang/webpack-basic/issues"
+  },
+  "homepage": "https://github.com/bom2zzang/webpack-basic#readme",
+  "devDependencies": {
+    "webpack": "^5.42.0",
+    "webpack-cli": "^4.7.2"
+  }
+}

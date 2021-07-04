@@ -9,3 +9,11 @@
 
 * 웹팩 이전의 세계와 모듈의 개념
 
+* 웹팩의 도입
+    1. npm 설치
+    2. `npm init` node.js의 프로젝트로 선언 > package.json파일 생성 확인
+    3. `npm install -D webpack webpack-cli`
+    
+    4. entry js인 index.js 파일을 생성한다.
+    5. `npx webpack --entry ./source/index.js --output-path ./public` > public폴더에 main.js가 생성됨.
+    6. index.html에서 public폴더의 main.js를 스크립트에 추가
