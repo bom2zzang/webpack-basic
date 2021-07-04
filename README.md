@@ -1,6 +1,7 @@
 # webpack-basic
 
-* [생활코딩](https://opentutorials.org/module/4566)
+ > [생활코딩](https://opentutorials.org/module/4566) <br/>
+ > [webpack](https://webpack.js.org/)
 
 * 장점
     - 여러개의 파일을 하나로 묶어주기 때문에 네트워크 접속의 부담을 줄 일 수 있습니다. 더 빠른 서비스를 제공할 수 있습니다. 
@@ -17,3 +18,8 @@
     4. entry js인 index.js 파일을 생성한다.
     5. `npx webpack --entry ./source/index.js --output-path ./public` > public폴더에 main.js가 생성됨.
     6. index.html에서 public폴더의 main.js를 스크립트에 추가
+
+* 설정파일의 도입
+    1. webpack.config.js 파일을 만든다.
+    2. 설정을 작성하고 `npx webpack --config webpack.config.js` > public폴더에 main.js가 생성됨. 
+    3. 또는 설정파일의 이름이 webpack.config.js라면 `npx webpack`로 깔끔하게 가능!
