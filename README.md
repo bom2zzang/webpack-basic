@@ -19,7 +19,16 @@
     5. `npx webpack --entry ./source/index.js --output-path ./public` > public폴더에 main.js가 생성됨.
     6. index.html에서 public폴더의 main.js를 스크립트에 추가
 
-* 설정파일의 도입
+* [설정파일의 도입](https://webpack.js.org/configuration/)
     1. webpack.config.js 파일을 만든다.
     2. 설정을 작성하고 `npx webpack --config webpack.config.js` > public폴더에 main.js가 생성됨. 
     3. 또는 설정파일의 이름이 webpack.config.js라면 `npx webpack`로 깔끔하게 가능!
+
+* [운영 모드의 도입](https://webpack.js.org/configuration/mode/)
+    1. Mode
+        ```
+            string = 'production': 'none' | 'development' | 'production'
+        ```
+    2. webpack.config.prod.js 를 만들어 개발모드와 운영모드를 분리한다. >  한 파일안에서 시스템 환경변수로 제어할 수도 있음!
+    
+
