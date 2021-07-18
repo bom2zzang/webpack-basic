@@ -27,13 +27,20 @@
   3. 또는 설정파일의 이름이 webpack.config.js라면 `npx webpack`로 깔끔하게 가능!
 
 - [운영 모드의 도입](https://webpack.js.org/configuration/mode/)
+
   1. Mode
      ```
          string = 'production': 'none' | 'development' | 'production'
      ```
   2. webpack.config.prod.js 를 만들어 개발모드와 운영모드를 분리한다. > 한 파일안에서 시스템 환경변수로 제어할 수도 있음!
+
 - [로더의 도입](https://webpack.js.org/guides/asset-management/)
+
   1. `npm install --save-dev style-loader css-loader`
   2. webpack.config.js에 설정 추가
   3. src폴더 아래의 소스들이 번들링 대상임 > public에 있는애들은 아님!
   4. [loaders](https://webpack.js.org/loaders/)
+
+- [output 설정](https://webpack.js.org/configuration/output/)
+  1. 파일을 쪼갤지, 하나로 합칠지!
+  2. webpack.config.js의 output부분 설정 추가

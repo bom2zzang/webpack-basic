@@ -2,11 +2,14 @@ const path = require("path");
 
 module.exports = {
   mode: "development",
-  entry: "./source/index.js",
+  entry: {
+    index: "./source/index.js",
+    about: "./source/about.js",
+  },
   output: {
     path: path.resolve(__dirname, "public"),
     //__dirname : webpack.config.js의 경로
-    filename: "main.js",
+    filename: "[name]_bundle.js",
     // npx webpack --config webpack.config.js or npx webpack
   },
   module: {
