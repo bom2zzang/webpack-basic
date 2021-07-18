@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/bom2zzang/webpack-basic#readme",
   "devDependencies": {
+    "css-loader": "^6.1.0",
+    "style-loader": "^3.1.0",
     "webpack": "^5.42.0",
     "webpack-cli": "^4.7.2"
   }
