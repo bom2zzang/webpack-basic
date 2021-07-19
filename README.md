@@ -47,6 +47,7 @@
   2. webpack.config.js의 output부분 설정 추가
 
 - [플러그인 도입](https://webpack.js.org/plugins/)
+
   1. 웹팩의 두가지 형태의 확장기능
      - 로더 : 동작형태가 규정되어있다.
      - **플러그인** : 복합적이고 자유롭다.
@@ -54,3 +55,7 @@
   3. \*.html을 src폴더 아래로 넣고 스크립트태그 제거
   4. [플러그인 옵션](https://github.com/jantimon/html-webpack-plugin#options)을 확인하여 webpack.config.js 설정 수정
   5. public폴더아래에 생긴 index.html을 확인
+
+- --watch 옵션
+  1. 바뀔 때마다 `npx webpack` 명령 귀찮다.
+  2. `npx webpack --watch` 소스 변경 감지하면 자동으로 컴파일 됨.
