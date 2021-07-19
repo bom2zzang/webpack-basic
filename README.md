@@ -57,5 +57,11 @@
   5. public폴더아래에 생긴 index.html을 확인
 
 - --watch 옵션
+
   1. 바뀔 때마다 `npx webpack` 명령 귀찮다.
   2. `npx webpack --watch` 소스 변경 감지하면 자동으로 컴파일 됨.
+
+- npm패키지 사용
+  1. [lodash](https://www.npmjs.com/package/lodash)설치를 해보자
+  2. `npm i lodash`
+  3. index.js에서 lodash를 import한다.
