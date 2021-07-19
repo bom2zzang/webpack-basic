@@ -1,3 +1,4 @@
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 
 module.exports = {
@@ -23,4 +24,16 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "./source/index.html", //무엇을 템플릿으로 할 것인지
+      filename: "index.html", //어떤결과로 저장할지
+      chunks: ["index"], //entry 이름을 가져옴
+    }),
+    new HtmlWebpackPlugin({
+      template: "./source/about.html", //무엇을 템플릿으로 할 것인지
+      filename: "about.html", //어떤결과로 저장할지
+      chunks: ["about"], //entry 이름을 가져옴
+    }),
+  ],
 };

@@ -42,5 +42,15 @@
   4. [loaders](https://webpack.js.org/loaders/)
 
 - [output 설정](https://webpack.js.org/configuration/output/)
+
   1. 파일을 쪼갤지, 하나로 합칠지!
   2. webpack.config.js의 output부분 설정 추가
+
+- [플러그인 도입](https://webpack.js.org/plugins/)
+  1. 웹팩의 두가지 형태의 확장기능
+     - 로더 : 동작형태가 규정되어있다.
+     - **플러그인** : 복합적이고 자유롭다.
+  2. HtmlWebpackPlugin 설치 `npm install --save-dev html-webpack-plugin`
+  3. \*.html을 src폴더 아래로 넣고 스크립트태그 제거
+  4. [플러그인 옵션](https://github.com/jantimon/html-webpack-plugin#options)을 확인하여 webpack.config.js 설정 수정
+  5. public폴더아래에 생긴 index.html을 확인
