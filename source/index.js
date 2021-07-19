@@ -5,7 +5,7 @@ import _ from "lodash"; //node_modules에서 찾아옴
 
 document.querySelector("#root").innerHTML = _.join(
   [hello_word, world_word],
-  " "
+  "_"
 );
 
 console.log("css", css);
